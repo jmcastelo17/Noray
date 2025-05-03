@@ -5,7 +5,7 @@ import zipfile
 # URL of the land polygons data from OpenStreetMap
 URL = "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
 OUTPUT_DIR = "data"
-ZIP_PATH = "data/land-polygons.zip"
+ZIP_PATH = "Data/data_stream-enda_stepType-instant.nc"
 
 # Ensure the data directory exists
 os.makedirs("data", exist_ok=True)
