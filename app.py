@@ -18,7 +18,7 @@ import branca
 @st.cache_resource
 def load_dataset():
     return xr.open_dataset(
-        "/Data/data_stream-enda_stepType-instant.nc",
+        "/Noray/Data/data_stream-enda_stepType-instant.nc",
         engine="netcdf4"
     )
 
