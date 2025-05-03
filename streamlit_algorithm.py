@@ -19,7 +19,7 @@ from shapely.geometry import LineString
 # --- Corrected Land Mask Loading and Handling ---
 # Load land polygons once at startup (with buffer for safety)
 LAND_POLYGONS = gpd.read_file(
-    "/Users/castelo/Desktop/Noray/land-polygons-split-4326/land_polygons.shp",
+    "/Noray/Data/land-polygons-split-4326/land_polygons.shp",
     bbox=(-2.15, 36.8, -0.85, 37.95)
 ).buffer(0.00015)  # ~15m buffer
 
