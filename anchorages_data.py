@@ -1,3 +1,4 @@
+# Datos extraidos de Navily
 anchorages = {
     "Bahía de Levante Oeste": {
         "latitude": 37.4055,  
