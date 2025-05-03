@@ -13,7 +13,7 @@ Noray is a weather routing application built for recreational sailors. It sugges
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/Noray.git
+git clone https://github.com/jmcastelo17/Noray.git
 cd Noray
 ```
 
