@@ -23,23 +23,6 @@ LAND_POLYGONS = gpd.read_file(
     bbox=(-2.15, 36.8, -0.85, 37.95)
 ).buffer(0.00015)  # ~15m buffer
 
-def load_land_mask():
-    """Load and properly orient the land mask"""
-    data = np.load("murcia_ultra_land_mask.npz")
-    mask = data["mask"]
-    lon_grid = data["lon_grid"]
-    lat_grid = data["lat_grid"]
-    
-    # Ensure proper orientation (latitude increasing)
-    if lat_grid[0] > lat_grid[-1]:
-        mask = np.flipud(mask)
-        lat_grid = np.flip(lat_grid)
-    
-    return mask, lon_grid, lat_grid
-
-# Load the mask once at startup
-LAND_MASK, LON_GRID, LAT_GRID = load_land_mask()
-
 def verify_crossing(start, end):
     """Simple and efficient land crossing check using Shapely"""
     start_lonlat = (start[1], start[0])
